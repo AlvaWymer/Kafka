@@ -4256,3 +4256,174 @@ java.io.IOException: Broken pipe
 2017-06-22 22:03:47,233 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka version : 0.10.2.1
 2017-06-22 22:03:47,233 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka commitId : e89bffd6b2eff799
 2017-06-22 22:03:47,414 INFO [org.apache.kafka.clients.producer.KafkaProducer] - Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2017-06-22 23:05:22,692 INFO [org.apache.kafka.clients.producer.ProducerConfig] - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	block.on.buffer.full = false
+	bootstrap.servers = [kafka-server-b:9095, kafka-server-c:9095, kafka-server-a:9095]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.fetch.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = PLAIN
+	security.protocol = SASL_PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	timeout.ms = 30000
+	value.serializer = class org.apache.kafka.common.serialization.IntegerSerializer
+
+2017-06-22 23:05:22,847 INFO [org.apache.kafka.common.security.authenticator.AbstractLogin] - Successfully logged in.
+2017-06-22 23:05:22,866 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka version : 0.10.2.1
+2017-06-22 23:05:22,866 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka commitId : e89bffd6b2eff799
+2017-06-22 23:05:23,034 INFO [org.apache.kafka.clients.producer.KafkaProducer] - Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2017-06-22 23:05:37,526 INFO [org.apache.kafka.clients.producer.ProducerConfig] - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	block.on.buffer.full = false
+	bootstrap.servers = [kafka-server-b:9095, kafka-server-c:9095, kafka-server-a:9095]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.fetch.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = PLAIN
+	security.protocol = SASL_PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	timeout.ms = 30000
+	value.serializer = class org.apache.kafka.common.serialization.IntegerSerializer
+
+2017-06-22 23:05:37,684 INFO [org.apache.kafka.common.security.authenticator.AbstractLogin] - Successfully logged in.
+2017-06-22 23:05:37,702 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka version : 0.10.2.1
+2017-06-22 23:05:37,702 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka commitId : e89bffd6b2eff799
+2017-06-22 23:05:37,875 INFO [org.apache.kafka.clients.producer.KafkaProducer] - Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2017-06-22 23:09:29,331 INFO [org.apache.kafka.clients.producer.ProducerConfig] - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	block.on.buffer.full = false
+	bootstrap.servers = [kafka-server-b:9095, kafka-server-c:9095, kafka-server-a:9095]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.fetch.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = PLAIN
+	security.protocol = SASL_PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	timeout.ms = 30000
+	value.serializer = class org.apache.kafka.common.serialization.IntegerSerializer
+
+2017-06-22 23:09:29,502 INFO [org.apache.kafka.common.security.authenticator.AbstractLogin] - Successfully logged in.
+2017-06-22 23:09:29,522 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka version : 0.10.2.1
+2017-06-22 23:09:29,522 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka commitId : e89bffd6b2eff799
+2017-06-22 23:09:29,704 INFO [org.apache.kafka.clients.producer.KafkaProducer] - Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
