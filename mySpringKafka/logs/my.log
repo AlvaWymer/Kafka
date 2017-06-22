@@ -238,3 +238,164 @@
 2017-06-22 23:12:04,918 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - Successfully joined group group-1 with generation 5
 2017-06-22 23:12:04,918 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - Setting newly assigned partitions [] for group group-1
 2017-06-22 23:12:04,918 INFO [org.springframework.kafka.listener.KafkaMessageListenerContainer] - partitions assigned:[]
+2017-06-22 23:14:21,744 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - Revoking previously assigned partitions [] for group group-1
+2017-06-22 23:14:21,745 INFO [org.springframework.kafka.listener.KafkaMessageListenerContainer] - partitions revoked:[]
+2017-06-22 23:14:21,745 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - (Re-)joining group group-1
+2017-06-22 23:14:21,749 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - Successfully joined group group-1 with generation 6
+2017-06-22 23:14:21,749 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - Setting newly assigned partitions [] for group group-1
+2017-06-22 23:14:21,749 INFO [org.springframework.kafka.listener.KafkaMessageListenerContainer] - partitions assigned:[]
+2017-06-22 23:26:32,993 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-06-22 23:26:32,997 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+2017-06-22 23:26:32,997 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+2017-06-22 23:26:32,998 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+2017-06-22 23:26:32,999 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3b81a1bc, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@64616ca2, org.springframework.test.context.support.DirtiesContextTestExecutionListener@13fee20c]
+2017-06-22 23:26:33,057 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/spring-kafka-consumer.xml]
+2017-06-22 23:26:33,181 INFO [org.springframework.context.support.GenericApplicationContext] - Refreshing org.springframework.context.support.GenericApplicationContext@5d5eef3d: startup date [Thu Jun 22 23:26:33 CST 2017]; root of context hierarchy
+2017-06-22 23:26:33,333 INFO [org.springframework.context.support.DefaultLifecycleProcessor] - Starting beans in phase 0
+2017-06-22 23:26:33,358 INFO [org.apache.kafka.clients.consumer.ConsumerConfig] - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [kafka-server-a:9095, kafka-server-c:9095, kafka-server-b:9095]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group-1
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = PLAIN
+	security.protocol = SASL_PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.IntegerDeserializer
+
+2017-06-22 23:26:33,494 INFO [org.apache.kafka.common.security.authenticator.AbstractLogin] - Successfully logged in.
+2017-06-22 23:26:33,529 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka version : 0.10.2.1
+2017-06-22 23:26:33,529 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka commitId : e89bffd6b2eff799
+2017-06-22 23:26:33,661 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - Discovered coordinator kafka-server-a:9095 (id: 2147483647 rack: null) for group group-1.
+2017-06-22 23:26:33,663 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - Revoking previously assigned partitions [] for group group-1
+2017-06-22 23:26:33,663 INFO [org.springframework.kafka.listener.KafkaMessageListenerContainer] - partitions revoked:[]
+2017-06-22 23:26:33,664 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - (Re-)joining group group-1
+2017-06-22 23:26:34,216 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - Revoking previously assigned partitions [] for group group-1
+2017-06-22 23:26:34,217 INFO [org.springframework.kafka.listener.KafkaMessageListenerContainer] - partitions revoked:[]
+2017-06-22 23:26:34,218 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - (Re-)joining group group-1
+2017-06-22 23:26:34,222 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - Successfully joined group group-1 with generation 7
+2017-06-22 23:26:34,222 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - Setting newly assigned partitions [] for group group-1
+2017-06-22 23:26:34,222 INFO [org.springframework.kafka.listener.KafkaMessageListenerContainer] - partitions assigned:[]
+2017-06-22 23:26:34,222 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - Successfully joined group group-1 with generation 7
+2017-06-22 23:26:34,224 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - Setting newly assigned partitions [mldn-topic-0] for group group-1
+2017-06-22 23:26:34,224 INFO [org.springframework.kafka.listener.KafkaMessageListenerContainer] - partitions assigned:[mldn-topic-0]
+2017-06-22 23:26:46,773 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-06-22 23:26:46,777 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+2017-06-22 23:26:46,778 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+2017-06-22 23:26:46,779 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+2017-06-22 23:26:46,780 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@783e6358, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@17550481, org.springframework.test.context.support.DirtiesContextTestExecutionListener@735f7ae5]
+2017-06-22 23:26:46,842 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/spring-kafka-producer.xml]
+2017-06-22 23:26:46,994 INFO [org.springframework.context.support.GenericApplicationContext] - Refreshing org.springframework.context.support.GenericApplicationContext@100fc185: startup date [Thu Jun 22 23:26:46 CST 2017]; root of context hierarchy
+2017-06-22 23:26:47,177 INFO [org.apache.kafka.clients.producer.ProducerConfig] - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	block.on.buffer.full = false
+	bootstrap.servers = [kafka-server-a:9095, kafka-server-c:9095, kafka-server-b:9095]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.fetch.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = PLAIN
+	security.protocol = SASL_PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	timeout.ms = 30000
+	value.serializer = class org.apache.kafka.common.serialization.IntegerSerializer
+
+2017-06-22 23:26:47,324 INFO [org.apache.kafka.common.security.authenticator.AbstractLogin] - Successfully logged in.
+2017-06-22 23:26:47,346 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka version : 0.10.2.1
+2017-06-22 23:26:47,346 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka commitId : e89bffd6b2eff799
+2017-06-22 23:26:47,481 INFO [org.springframework.context.support.GenericApplicationContext] - Closing org.springframework.context.support.GenericApplicationContext@100fc185: startup date [Thu Jun 22 23:26:46 CST 2017]; root of context hierarchy
+2017-06-22 23:26:47,482 INFO [org.springframework.context.support.DefaultLifecycleProcessor] - Stopping beans in phase 0
+2017-06-22 23:26:47,483 INFO [org.apache.kafka.clients.producer.KafkaProducer] - Closing the Kafka producer with timeoutMillis = 30000 ms.
+2017-06-22 23:26:59,304 INFO [org.springframework.context.support.GenericApplicationContext] - Closing org.springframework.context.support.GenericApplicationContext@5d5eef3d: startup date [Thu Jun 22 23:26:33 CST 2017]; root of context hierarchy
+2017-06-22 23:26:59,304 INFO [org.springframework.context.support.DefaultLifecycleProcessor] - Stopping beans in phase 0
+2017-06-22 23:26:59,311 INFO [org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer] - Consumer stopped
+2017-06-22 23:27:01,431 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - Revoking previously assigned partitions [] for group group-1
+2017-06-22 23:27:01,431 INFO [org.springframework.kafka.listener.KafkaMessageListenerContainer] - partitions revoked:[]
+2017-06-22 23:27:01,431 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - (Re-)joining group group-1
+2017-06-22 23:27:01,434 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - Successfully joined group group-1 with generation 8
+2017-06-22 23:27:01,434 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - Setting newly assigned partitions [] for group group-1
+2017-06-22 23:27:01,434 INFO [org.springframework.kafka.listener.KafkaMessageListenerContainer] - partitions assigned:[]

@@ -4,7 +4,11 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-
+/**
+ * 消费者测试类
+ * @author paul
+ *
+ */
 @ContextConfiguration(locations = { "classpath:spring/spring-kafka-consumer.xml" })
 @RunWith(SpringJUnit4ClassRunner.class)
 public class TestSpringKafkaConsumer {
